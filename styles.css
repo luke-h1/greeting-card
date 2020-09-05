@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  color: #fff;
+  background-color: #000;
+  padding: 60px;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.card {
+  width: 100%;
+}
+
+.card h1 {
+  text-align: center;
+  margin-left: 0.6em;
+}
+
+.i-container {
+  text-align: center;
+}
+
+.i-container i {
+  margin: 0.1em 0.2em 0.1em 0.2em;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 80px;
+}
+
+.img-container img {
+  width: 25%;
+  position: absolute;
+  margin-right: 6.1em;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+a {
+  color: #fff;
+}
+
+i:hover,
+i:active {
+  color: #000;
+}
+
+/* MEDIA QUERIES  */
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+  .img-container img {
+    width: 25%;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .img-container img {
+    width: 15%;
+  }
+  .container {
+    width: 80%;
+  }
+
+  .img-container img {
+    width: 35%;
+    position: absolute;
+    left: 0;
+    margin-left: 0.3em;
+  }
+}
+@media (max-width: 640px) {
+  .img-container img {
+    width: 15%;
+  }
+  .container {
+    width: 80%;
+  }
+
+  .img-container img {
+    width: 25%;
+    position: absolute;
+    left: 0;
+    margin-left: 0.1em;
+  }
+}
